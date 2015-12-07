@@ -9,6 +9,7 @@ Teensy 3.x is a low cost microcontroller based on 32 bit ARM Cortex M4 , and it 
 
 ## Operation
 Whenever an end user registers this U2F device on a website, this device will 
+
 1. Generate a keypair
 2. Assign a keyhandle - this is just a number from 0-9, as this device will only store 10 keys.
 3. Store the private key in the Teensy's EEPROM along with a keyhandle and a 32 bit application identitfier passed by the website
@@ -20,6 +21,7 @@ The website will remember the key handle and public key along with the end user'
 
 
 Later on when the website wants to authenticate the end user, the website will ask the device to sign with is private key and pass in the keyhandle and application identifier. Then the device will
+
 1. Check that the passed in keyhandled and 32 bit application identified exists in the EEPROM, fetch the private key from the EEPROM
 2. (Optional) - Single blink the appropriate LED, and wait for user to press the button.
 3. Sign the challenge param with the private key.
