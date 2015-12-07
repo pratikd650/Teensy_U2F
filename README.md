@@ -37,3 +37,5 @@ The website will then verify the signed challenge with the previously stored pub
 * *Crypto* : This device uses the MbedTLS crypto library for random number generation (HMAC-DRBG), digesting (SHA256), key generation (for P256 elliptic curves), ECDSA signing etc. [https://tls.mbed.org/]  This library has a config.h  file where you can put in hash defines to pick and choose which parts of the library you would like to link. For the ECC parts of the crypto, there is alternative to use the kmackay ECC library -  [https://github.com/kmackay/micro-ecc] which is smaller in size.  Also this code uses ECDSA deterministic signing which is more secure.
 
 
+## Building the code
+Although you can build this code in Arduino IDE, it is better to build it Arduino-Eclipse - [http://eclipse.baeyens.it/].
