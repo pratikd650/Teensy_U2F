@@ -42,10 +42,10 @@ Although you can build this code in Arduino IDE, it is better to build it Arduin
 
 ### Getting the libraries ###
 1. *MbedTLS* : Setup MbedTLS as an Arduino Library as follows
---* Create an MbedTLS folder in your Arduino Libraries, i.e. in "Arduino/hardware/teensy/avr/libraries/MbedTLS".
---* Create another mbdedtls folder inside this, i.e. "Arduino/hardware/teensy/avr/libraries/MbedTLS/mbedtls".
---* Download mbedtls from [https://tls.mbed.org/download], unzip it in a temporary location, and copy all the  files from "<unzipped location>/include/mbedtls" into the above "mbdedtls" folder. Also copy the files from "<unzipped location>/library" into the same mbedtls folder.  
---* Edit the file "config.h" that was copied from "include/mbedtls" to have the content defined in mbded_tls_config.h
+  * Create an MbedTLS folder in your Arduino Libraries, i.e. in "Arduino/hardware/teensy/avr/libraries/MbedTLS".
+  * Create another mbdedtls folder inside this, i.e. "Arduino/hardware/teensy/avr/libraries/MbedTLS/mbedtls".
+  * Download mbedtls from [https://tls.mbed.org/download], unzip it in a temporary location, and copy all the  files from "<unzipped location>/include/mbedtls" into the above "mbdedtls" folder. Also copy the files from "<unzipped location>/library" into the same mbedtls folder.  
+  * Edit the file "config.h" that was copied from "include/mbedtls" to have the content defined in mbded_tls_config.h
 2. *Micro-ECC*: (Optional)  Setup MicroECC as an Arduino Library as follows
---* Create a "uECC" folder under Arduino Libaries
---* Download the zip from [https://github.com/kmackay/micro-ecc] and unzip it under the uECC folder, so that uECC.c and uECC.h are directly in the "uECC" folder. Delete the test directory.
+  * Create a "uECC" folder under Arduino Libaries
+  * Download the zip from [https://github.com/kmackay/micro-ecc] and unzip it under the uECC folder, so that uECC.c and uECC.h are directly in the "uECC" folder. Delete the test directory.
